@@ -208,14 +208,17 @@ apply_launchd_service() {
     <array>
         <string>${INSTALL_DIR}/easytier-core</string>
         <string>--network-name</string>
-        <string>magicdan</string>
+        # 修改组网名称
+        <string>组网名称</string>
         <string>--network-secret</string>
-        <string>CD87658165</string>
+        # 修改组网密码
+        <string>组网密码</string>
         <string>--ipv4</string>
         <string>${ipv4}</string>
         <string>--enable-exit-node</string>
         <string>--peers</string>
-        <string>tcp://magicdan.myds.me:11010</string>
+        # 修改广播服务器地址及端口
+        <string>tcp://地址:11010</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
